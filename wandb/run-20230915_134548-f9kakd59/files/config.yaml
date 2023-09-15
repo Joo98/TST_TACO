@@ -1,0 +1,119 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.18
+    cli_version: 0.15.10
+    framework: huggingface
+    huggingface_version: 4.33.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1694753148.363152
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 55
+      2:
+      - 1
+      - 11
+      - 49
+      - 55
+      3:
+      - 17
+      - 23
+      - 37
+      4: 3.8.18
+      5: 0.15.10
+      6: 4.33.1
+      8:
+      - 5
+wandb:
+  desc: null
+  value: IMDB
+task:
+  desc: null
+  value: fine_tune
+preprocessing:
+  desc: null
+  value: false
+training:
+  desc: null
+  value: true
+testing:
+  desc: null
+  value: false
+resume:
+  desc: null
+  value: false
+dataset:
+  desc: null
+  value: GYAFC_Corpus_Entertainment_Music
+val_ratio:
+  desc: null
+  value: 0.2
+batch_size:
+  desc: null
+  value: 16
+model:
+  desc: null
+  value: T5
+dataset_path:
+  desc: null
+  value: /HDD/dataset/GYAFC_Corpus/Entertainment_Music
+file_type:
+  desc: null
+  value: txt
+model_path:
+  desc: null
+  value: models/save/T5_GYAFC_EM_ver1.pt
+optim_type:
+  desc: null
+  value: AdamW
+weight_decay:
+  desc: null
+  value: 0.01
+scheduler_type:
+  desc: null
+  value: get_linear_schedule_with_warmup
+epochs:
+  desc: null
+  value: 4
+lr:
+  desc: null
+  value: 2.0e-05
+data_split_ratio:
+  desc: null
+  value:
+  - 0.8
+  - 0.1
+  - 0.1
+seed:
+  desc: null
+  value: 42
+tokenizer:
+  desc: null
+  value: T5
+do_lower_case:
+  desc: null
+  value: true
+pretrained:
+  desc: null
+  value: true
+min_len:
+  desc: null
+  value: 10
+src_max_len:
+  desc: null
+  value: 300
+trg_max_len:
+  desc: null
+  value: 300
+num_workers:
+  desc: null
+  value: 1
+d_hidden:
+  desc: null
+  value: 768

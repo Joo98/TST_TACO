@@ -1,0 +1,162 @@
+{
+    "os": "Linux-5.4.0-150-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2023-09-15T04:45:49.118990",
+    "startedAt": "2023-09-15T04:45:48.358459",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--training"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePathLocal": "run.py",
+    "codePath": "run.py",
+    "git": {
+        "remote": "https://github.com/Joo98/TST_TACO.git",
+        "commit": "3fd560dc981efa0ecc701b28089eb077d235bf8c"
+    },
+    "email": "joo98@github.com",
+    "root": "/home/juhyoung/projects/TST_TACO",
+    "host": "iipl",
+    "username": "juhyoung",
+    "executable": "/home/juhyoung/anaconda3/envs/taco/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 4300.019899999999,
+        "min": 1200.0,
+        "max": 4560.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4300.0,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4299.998,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4299.998,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4300.0,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4300.001,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 4300.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4300.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4300.0,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4300.001,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4300.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 4300.219,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4300.0,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4299.893,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4299.803,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4299.869,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 4300.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4300.571,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4299.999,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4300.021,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4300.025,
+            "min": 1200.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1876.218734741211,
+            "used": 1442.1379127502441
+        }
+    },
+    "gpu": "GeForce RTX 3090",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "GeForce RTX 3090",
+            "memory_total": 25447170048
+        },
+        {
+            "name": "GeForce RTX 3090",
+            "memory_total": 25447170048
+        },
+        {
+            "name": "GeForce RTX 3090",
+            "memory_total": 25447170048
+        },
+        {
+            "name": "GeForce RTX 3090",
+            "memory_total": 25438715904
+        }
+    ],
+    "memory": {
+        "total": 125.49880599975586
+    }
+}

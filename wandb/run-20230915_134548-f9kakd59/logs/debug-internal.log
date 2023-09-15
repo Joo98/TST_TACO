@@ -1,0 +1,190 @@
+2023-09-15 13:45:48,363 INFO    StreamThr :22092 [internal.py:wandb_internal():86] W&B internal server running at pid: 22092, started at: 2023-09-15 13:45:48.363064
+2023-09-15 13:45:48,364 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: status
+2023-09-15 13:45:48,366 INFO    WriterThread:22092 [datastore.py:open_for_write():85] open: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/run-f9kakd59.wandb
+2023-09-15 13:45:48,368 DEBUG   SenderThread:22092 [sender.py:send():379] send: header
+2023-09-15 13:45:48,384 DEBUG   SenderThread:22092 [sender.py:send():379] send: run
+2023-09-15 13:45:48,982 INFO    SenderThread:22092 [dir_watcher.py:__init__():211] watching files in: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files
+2023-09-15 13:45:48,983 INFO    SenderThread:22092 [sender.py:_start_run_threads():1121] run started: f9kakd59 with start time 1694753148.363152
+2023-09-15 13:45:48,995 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: check_version
+2023-09-15 13:45:48,995 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: check_version
+2023-09-15 13:45:49,078 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: run_start
+2023-09-15 13:45:49,082 DEBUG   HandlerThread:22092 [system_info.py:__init__():32] System info init
+2023-09-15 13:45:49,082 DEBUG   HandlerThread:22092 [system_info.py:__init__():47] System info init done
+2023-09-15 13:45:49,082 INFO    HandlerThread:22092 [system_monitor.py:start():181] Starting system monitor
+2023-09-15 13:45:49,082 INFO    SystemMonitor:22092 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-15 13:45:49,083 INFO    HandlerThread:22092 [system_monitor.py:probe():201] Collecting system info
+2023-09-15 13:45:49,084 INFO    SystemMonitor:22092 [interfaces.py:start():190] Started cpu monitoring
+2023-09-15 13:45:49,084 INFO    SystemMonitor:22092 [interfaces.py:start():190] Started disk monitoring
+2023-09-15 13:45:49,085 INFO    SystemMonitor:22092 [interfaces.py:start():190] Started gpu monitoring
+2023-09-15 13:45:49,085 INFO    SystemMonitor:22092 [interfaces.py:start():190] Started memory monitoring
+2023-09-15 13:45:49,086 INFO    SystemMonitor:22092 [interfaces.py:start():190] Started network monitoring
+2023-09-15 13:45:49,118 DEBUG   HandlerThread:22092 [system_info.py:probe():196] Probing system
+2023-09-15 13:45:49,126 DEBUG   HandlerThread:22092 [system_info.py:_probe_git():181] Probing git
+2023-09-15 13:45:49,144 DEBUG   HandlerThread:22092 [system_info.py:_probe_git():189] Probing git done
+2023-09-15 13:45:49,144 DEBUG   HandlerThread:22092 [system_info.py:probe():244] Probing system done
+2023-09-15 13:45:49,144 DEBUG   HandlerThread:22092 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-150-generic-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2023-09-15T04:45:49.118990', 'startedAt': '2023-09-15T04:45:48.358459', 'docker': None, 'cuda': None, 'args': ('--training',), 'state': 'running', 'program': 'run.py', 'codePathLocal': 'run.py', 'codePath': 'run.py', 'git': {'remote': 'https://github.com/Joo98/TST_TACO.git', 'commit': '3fd560dc981efa0ecc701b28089eb077d235bf8c'}, 'email': 'joo98@github.com', 'root': '/home/juhyoung/projects/TST_TACO', 'host': 'iipl', 'username': 'juhyoung', 'executable': '/home/juhyoung/anaconda3/envs/taco/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 4300.019899999999, 'min': 1200.0, 'max': 4560.0}, 'cpu_freq_per_core': [{'current': 4300.0, 'min': 1200.0, 'max': 4500.0}, {'current': 4299.998, 'min': 1200.0, 'max': 4500.0}, {'current': 4299.998, 'min': 1200.0, 'max': 4500.0}, {'current': 4300.0, 'min': 1200.0, 'max': 4500.0}, {'current': 4300.001, 'min': 1200.0, 'max': 4600.0}, {'current': 4300.0, 'min': 1200.0, 'max': 4700.0}, {'current': 4300.0, 'min': 1200.0, 'max': 4700.0}, {'current': 4300.0, 'min': 1200.0, 'max': 4500.0}, {'current': 4300.001, 'min': 1200.0, 'max': 4500.0}, {'current': 4300.0, 'min': 1200.0, 'max': 4600.0}, {'current': 4300.219, 'min': 1200.0, 'max': 4500.0}, {'current': 4300.0, 'min': 1200.0, 'max': 4500.0}, {'current': 4299.893, 'min': 1200.0, 'max': 4500.0}, {'current': 4299.803, 'min': 1200.0, 'max': 4500.0}, {'current': 4299.869, 'min': 1200.0, 'max': 4600.0}, {'current': 4300.0, 'min': 1200.0, 'max': 4700.0}, {'current': 4300.571, 'min': 1200.0, 'max': 4700.0}, {'current': 4299.999, 'min': 1200.0, 'max': 4500.0}, {'current': 4300.021, 'min': 1200.0, 'max': 4500.0}, {'current': 4300.025, 'min': 1200.0, 'max': 4600.0}], 'disk': {'/': {'total': 1876.218734741211, 'used': 1442.1379127502441}}, 'gpu': 'GeForce RTX 3090', 'gpu_count': 4, 'gpu_devices': [{'name': 'GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'GeForce RTX 3090', 'memory_total': 25438715904}], 'memory': {'total': 125.49880599975586}}
+2023-09-15 13:45:49,144 INFO    HandlerThread:22092 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-15 13:45:49,145 INFO    HandlerThread:22092 [system_monitor.py:probe():214] Publishing system info
+2023-09-15 13:45:49,145 DEBUG   HandlerThread:22092 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-15 13:45:49,145 DEBUG   HandlerThread:22092 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-15 13:45:49,145 DEBUG   HandlerThread:22092 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-15 13:45:49,985 INFO    Thread-12 :22092 [dir_watcher.py:_on_file_created():271] file/dir created: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/conda-environment.yaml
+2023-09-15 13:45:49,985 INFO    Thread-12 :22092 [dir_watcher.py:_on_file_created():271] file/dir created: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/requirements.txt
+2023-09-15 13:45:51,698 DEBUG   HandlerThread:22092 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-15 13:45:51,699 INFO    HandlerThread:22092 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-15 13:45:51,701 DEBUG   SenderThread:22092 [sender.py:send():379] send: files
+2023-09-15 13:45:51,701 INFO    SenderThread:22092 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-09-15 13:45:51,708 DEBUG   SenderThread:22092 [sender.py:send():379] send: telemetry
+2023-09-15 13:45:51,708 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-15 13:45:51,708 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-15 13:45:51,709 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: stop_status
+2023-09-15 13:45:51,984 INFO    Thread-12 :22092 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/conda-environment.yaml
+2023-09-15 13:45:51,984 INFO    Thread-12 :22092 [dir_watcher.py:_on_file_created():271] file/dir created: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/wandb-metadata.json
+2023-09-15 13:45:52,072 DEBUG   SenderThread:22092 [sender.py:send():379] send: telemetry
+2023-09-15 13:45:52,072 DEBUG   SenderThread:22092 [sender.py:send():379] send: run
+2023-09-15 13:45:52,501 INFO    SenderThread:22092 [sender.py:send_run():999] updated run: f9kakd59
+2023-09-15 13:45:52,501 DEBUG   SenderThread:22092 [sender.py:send():379] send: config
+2023-09-15 13:45:52,501 DEBUG   SenderThread:22092 [sender.py:send():379] send: exit
+2023-09-15 13:45:52,501 INFO    SenderThread:22092 [sender.py:send_exit():584] handling exit code: 0
+2023-09-15 13:45:52,501 INFO    SenderThread:22092 [sender.py:send_exit():586] handling runtime: 2
+2023-09-15 13:45:52,503 INFO    SenderThread:22092 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-15 13:45:52,503 INFO    SenderThread:22092 [sender.py:send_exit():592] send defer
+2023-09-15 13:45:52,503 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:52,503 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-15 13:45:52,504 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:52,504 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-09-15 13:45:52,504 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 1
+2023-09-15 13:45:52,504 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:52,504 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-15 13:45:52,504 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:52,504 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-09-15 13:45:52,504 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 2
+2023-09-15 13:45:52,504 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:52,505 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-15 13:45:52,505 INFO    HandlerThread:22092 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-15 13:45:52,505 DEBUG   SystemMonitor:22092 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-15 13:45:52,505 INFO    HandlerThread:22092 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-15 13:45:52,505 DEBUG   SystemMonitor:22092 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-15 13:45:52,505 INFO    HandlerThread:22092 [interfaces.py:finish():202] Joined disk monitor
+2023-09-15 13:45:52,506 DEBUG   SystemMonitor:22092 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-15 13:45:52,655 INFO    wandb-upload_0:22092 [upload_job.py:push():131] Uploaded file /tmp/tmp0n_pj5bnwandb/vbmb6kbl-wandb-metadata.json
+2023-09-15 13:45:52,978 INFO    HandlerThread:22092 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-15 13:45:52,979 INFO    HandlerThread:22092 [interfaces.py:finish():202] Joined memory monitor
+2023-09-15 13:45:52,979 INFO    HandlerThread:22092 [interfaces.py:finish():202] Joined network monitor
+2023-09-15 13:45:52,979 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-15 13:45:52,979 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:52,980 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-09-15 13:45:52,980 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 3
+2023-09-15 13:45:52,980 DEBUG   SenderThread:22092 [sender.py:send():379] send: stats
+2023-09-15 13:45:52,980 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:52,980 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: poll_exit
+2023-09-15 13:45:52,980 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-15 13:45:52,981 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:52,981 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-09-15 13:45:52,981 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 4
+2023-09-15 13:45:52,981 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:52,981 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-15 13:45:52,981 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:52,981 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-09-15 13:45:52,981 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 5
+2023-09-15 13:45:52,981 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:52,981 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-15 13:45:52,982 DEBUG   SenderThread:22092 [sender.py:send():379] send: summary
+2023-09-15 13:45:52,982 INFO    SenderThread:22092 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-15 13:45:52,982 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:52,982 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-09-15 13:45:52,982 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 6
+2023-09-15 13:45:52,982 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:52,982 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-15 13:45:52,983 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:52,983 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-09-15 13:45:52,987 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: status_report
+2023-09-15 13:45:52,988 INFO    Thread-12 :22092 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/config.yaml
+2023-09-15 13:45:52,989 INFO    Thread-12 :22092 [dir_watcher.py:_on_file_created():271] file/dir created: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/wandb-summary.json
+2023-09-15 13:45:53,446 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 7
+2023-09-15 13:45:53,446 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:53,446 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-15 13:45:53,447 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:53,447 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-09-15 13:45:53,447 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 8
+2023-09-15 13:45:53,447 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:53,447 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-15 13:45:53,447 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:53,447 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-09-15 13:45:53,447 INFO    SenderThread:22092 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-15 13:45:53,448 INFO    SenderThread:22092 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-09-15 13:45:53,449 INFO    SenderThread:22092 [job_builder.py:build():369] adding wandb-job metadata file
+2023-09-15 13:45:53,452 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 9
+2023-09-15 13:45:53,453 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:53,453 DEBUG   SenderThread:22092 [sender.py:send():379] send: artifact
+2023-09-15 13:45:53,453 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-15 13:45:53,714 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-15 13:45:53,989 INFO    Thread-12 :22092 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/config.yaml
+2023-09-15 13:45:55,962 INFO    wandb-upload_0:22092 [upload_job.py:push():89] Uploaded file /home/juhyoung/.local/share/wandb/artifacts/staging/tmp6003ixhw
+2023-09-15 13:45:55,963 INFO    wandb-upload_1:22092 [upload_job.py:push():89] Uploaded file /home/juhyoung/.local/share/wandb/artifacts/staging/tmprmrnpx6y
+2023-09-15 13:45:57,353 INFO    SenderThread:22092 [sender.py:send_artifact():1453] sent artifact job-https___github.com_Joo98_TST_TACO.git_run.py - {'id': 'QXJ0aWZhY3Q6NTY5MTk1NTA5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjk3NzI3NjA3', 'latestArtifact': None}}
+2023-09-15 13:45:57,353 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:57,353 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-09-15 13:45:57,353 INFO    SenderThread:22092 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-15 13:45:57,990 INFO    SenderThread:22092 [dir_watcher.py:finish():388] scan: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files
+2023-09-15 13:45:57,990 INFO    SenderThread:22092 [dir_watcher.py:finish():402] scan save: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/requirements.txt requirements.txt
+2023-09-15 13:45:57,990 INFO    SenderThread:22092 [dir_watcher.py:finish():402] scan save: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/config.yaml config.yaml
+2023-09-15 13:45:57,991 INFO    SenderThread:22092 [dir_watcher.py:finish():402] scan save: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/wandb-summary.json wandb-summary.json
+2023-09-15 13:45:57,993 INFO    SenderThread:22092 [dir_watcher.py:finish():402] scan save: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/conda-environment.yaml conda-environment.yaml
+2023-09-15 13:45:57,996 INFO    SenderThread:22092 [dir_watcher.py:finish():402] scan save: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/wandb-metadata.json wandb-metadata.json
+2023-09-15 13:45:57,996 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 10
+2023-09-15 13:45:57,999 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: poll_exit
+2023-09-15 13:45:57,999 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:58,002 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-15 13:45:58,002 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:58,002 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-09-15 13:45:58,002 INFO    SenderThread:22092 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-15 13:45:58,471 INFO    wandb-upload_0:22092 [upload_job.py:push():131] Uploaded file /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/requirements.txt
+2023-09-15 13:45:58,636 INFO    wandb-upload_1:22092 [upload_job.py:push():131] Uploaded file /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/config.yaml
+2023-09-15 13:45:58,698 INFO    wandb-upload_2:22092 [upload_job.py:push():131] Uploaded file /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/wandb-summary.json
+2023-09-15 13:45:58,716 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 13:45:58,800 INFO    wandb-upload_3:22092 [upload_job.py:push():131] Uploaded file /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/files/conda-environment.yaml
+2023-09-15 13:45:59,001 INFO    Thread-11 :22092 [sender.py:transition_state():612] send defer: 11
+2023-09-15 13:45:59,001 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:59,001 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-15 13:45:59,002 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:59,002 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-09-15 13:45:59,002 INFO    SenderThread:22092 [file_pusher.py:join():181] waiting for file pusher
+2023-09-15 13:45:59,002 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 12
+2023-09-15 13:45:59,002 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:59,002 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-15 13:45:59,002 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: status_report
+2023-09-15 13:45:59,002 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:59,002 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-09-15 13:45:59,002 INFO    SenderThread:22092 [file_stream.py:finish():594] file stream finish called
+2023-09-15 13:45:59,239 INFO    SenderThread:22092 [file_stream.py:finish():598] file stream finish is done
+2023-09-15 13:45:59,239 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 13
+2023-09-15 13:45:59,239 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:59,240 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-15 13:45:59,240 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:59,240 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-09-15 13:45:59,240 INFO    SenderThread:22092 [sender.py:transition_state():612] send defer: 14
+2023-09-15 13:45:59,240 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 13:45:59,240 DEBUG   SenderThread:22092 [sender.py:send():379] send: final
+2023-09-15 13:45:59,241 INFO    HandlerThread:22092 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-15 13:45:59,241 DEBUG   SenderThread:22092 [sender.py:send():379] send: footer
+2023-09-15 13:45:59,241 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: defer
+2023-09-15 13:45:59,241 INFO    SenderThread:22092 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-09-15 13:45:59,241 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-15 13:45:59,242 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: poll_exit
+2023-09-15 13:45:59,242 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: server_info
+2023-09-15 13:45:59,242 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: server_info
+2023-09-15 13:45:59,245 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-15 13:45:59,245 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-15 13:45:59,245 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-15 13:45:59,246 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: job_info
+2023-09-15 13:45:59,439 DEBUG   SenderThread:22092 [sender.py:send_request():406] send_request: job_info
+2023-09-15 13:45:59,439 INFO    MainThread:22092 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2023-09-15 13:45:59,439 INFO    MainThread:22092 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2023-09-15 13:45:59,439 INFO    MainThread:22092 [wandb_run.py:_footer_sync_info():3516] logging synced files
+2023-09-15 13:45:59,440 DEBUG   HandlerThread:22092 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-15 13:45:59,440 INFO    HandlerThread:22092 [handler.py:finish():840] shutting down handler
+2023-09-15 13:46:00,246 INFO    WriterThread:22092 [datastore.py:close():294] close: /home/juhyoung/projects/TST_TACO/wandb/run-20230915_134548-f9kakd59/run-f9kakd59.wandb
+2023-09-15 13:46:00,439 INFO    SenderThread:22092 [sender.py:finish():1531] shutting down sender
+2023-09-15 13:46:00,439 INFO    SenderThread:22092 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-15 13:46:00,439 INFO    SenderThread:22092 [file_pusher.py:join():181] waiting for file pusher
