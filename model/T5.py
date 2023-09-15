@@ -11,7 +11,7 @@ from utils.model_utils import return_model_name, encoder_model_setting, decoder_
 
 class TransformerModel(nn.Module):
     def __init__(self, encoder_model_type: str = 'bart', decoder_model_type: str = 'bart', 
-                 src_vocab_num: int = 32000, trg_vocab_num: int = 32000,
+                 src_vocab_num: int = 32100, trg_vocab_num: int = 32100,
                  src_max_len: int = 150, trg_max_len: int = 150,
                  isPreTrain: bool = True, dropout: float = 0.3):
         super().__init__()
@@ -78,11 +78,6 @@ class TransformerModel(nn.Module):
         encoder_out = encoder_out['last_hidden_state'] # (batch_size, seq_len, d_hidden)
 
         return encoder_out
-    
-    def pca_reduction(self, encoder_hidden_states, encoder_attention_mask=None):
-        U, S, V = torch.pca_lowrank(encoder_hidden_states.transpose(1,2), q=3)
-        pca_encoder_out = U.transpose(1,2)
-        return pca_encoder_out
     
     def decode(self, trg_input_ids, encoder_hidden_states=None, encoder_attention_mask=None):
         decoder_input_ids = shift_tokens_right(

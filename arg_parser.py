@@ -1,7 +1,7 @@
 import argparse
 
 MODEL = 'T5'
-tokenizer = 'T5'
+tokenizer = 'T5-base'
 TASK = 'fine_tune'
 model_path = 'models/save/T5_GYAFC_EM_ver1.pt'
 
