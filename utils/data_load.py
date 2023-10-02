@@ -21,7 +21,7 @@ def data_load(dataset_path:str, huggingface_data:bool=True, seed:int=42,
         with open(file_trg, "r") as f:
             for line in f :
                 trg_list.append(line)
-    else : 
+    elif mode == 'test' : 
         file_src = os.path.join(dataset_path, mode, 'informal_em_test.txt')
         with open(file_src, "r") as f:
             for line in f :
@@ -38,6 +38,26 @@ def data_load(dataset_path:str, huggingface_data:bool=True, seed:int=42,
                 file = list(f)
                 for i in range(len(file)):
                     trg_list[i].append(file[i])
+    else:
+        file_src = os.path.join(dataset_path, mode, 'informal_em_tune.txt')
+        with open(file_src, "r") as f:
+            for line in f :
+                src_list.append(line)
+
+        file_trg_list = [os.path.join(dataset_path, mode, 'formal.ref0_em_tune.txt'),
+                    os.path.join(dataset_path, mode, 'formal.ref1_em_tune.txt'),
+                    os.path.join(dataset_path, mode, 'formal.ref2_em_tune.txt'),
+                    os.path.join(dataset_path, mode, 'formal.ref3_em_tune.txt')
+                    ]
+        trg_list = [[] for _ in range(len(src_list))]
+        for file_trg in file_trg_list:
+            with open(file_trg, "r") as f:
+                file = list(f)
+                for i in range(len(file)):
+                    trg_list[i].append(file[i])
 
     assert len(src_list) == len(trg_list)
     print(f'example pair (informal / formal ) : \n\t {src_list[0]} \t {trg_list[0]}' )
+    print(f'dataset size : {len(src_list)}')
+    
+    return src_list, trg_list
